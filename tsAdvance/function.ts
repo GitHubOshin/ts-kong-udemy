@@ -24,7 +24,7 @@ console.log(myPet());
 
 // Parameter & Return 
 
-function sumNumber(n: number): string {
+function evenOrOdd(n: number): string {
   if (n % 2 === 0) {
     return 'Even number'
   } else {
@@ -32,4 +32,12 @@ function sumNumber(n: number): string {
   }
 }
 
-console.log(sumNumber(8));
+console.log(evenOrOdd(8));
+
+// Arrow Function
+
+const sumNumber = (a:number, b:number):number => {
+  return a + b
+}
+
+console.log(sumNumber(2,2));
