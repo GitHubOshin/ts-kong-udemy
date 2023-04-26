@@ -41,3 +41,12 @@ const sumNumber = (a:number, b:number):number => {
 }
 
 console.log(sumNumber(2,2));
+
+// Default Parameter
+
+const familyMember = (firstName:string, lastName:string = "Mamuangsuk") => {
+  console.log(`Name: ${firstName} Lastname: ${lastName}`);
+}
+
+familyMember("Whasoo")
+familyMember("Jisoo", "Kim")
