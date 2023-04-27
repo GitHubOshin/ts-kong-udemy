@@ -1,18 +1,12 @@
-type CuteFriend = {
-  readonly id: number
-  name: string
-  gender?: string
-  contact?: string
-}
-
-let closeFriend1: CuteFriend = {
+'use strict'
+let closeFriend1 = {
   id: 1,
   name: 'John',
   gender: 'Male',
   contact: 'HT'
 }
 
-let closeFriend2: CuteFriend = {
+let closeFriend2 = {
   id: 2,
   name: 'Sayo',
   contact: 'HT'
