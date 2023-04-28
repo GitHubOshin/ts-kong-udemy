@@ -15,3 +15,10 @@ type BestFriend = {
 
 const bestFriends: BestFriend[] = []
 bestFriends.push({ name: 'Sayo', birthday: '01/01/2001', contact: 'Instagram' })
+
+// Array & Spread Operator
+
+const cuteAnimals: string[] = ["Hamster", "Squirrel"]
+const bigAnimals: string[] = ["Elephant", "Horse"]
+
+cuteAnimals.push(...bigAnimals)
