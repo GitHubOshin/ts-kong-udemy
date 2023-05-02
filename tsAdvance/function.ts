@@ -66,3 +66,19 @@ function total2(...numbers: number[]) {
 }
 
 console.log(total2(2, 5, 7, 10, 1))
+
+// Array Destructuring
+
+const colours: string[] = ['rojo', 'verde', 'azul']
+const [red, green, blue] = colours
+
+// Object Destructuring
+
+const avatarFriends = {
+  cat: 'John',
+  hamster: 'Kman',
+  dog: 'Ngaw'
+}
+
+const { cat, hamster, dog } = avatarFriends
+console.log(cat, hamster, dog)
