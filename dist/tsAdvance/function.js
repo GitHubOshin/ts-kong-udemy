@@ -8,13 +8,13 @@ sayHi();
 function myName(name) {
     console.log(`Hi! My name's ${name}`);
 }
-myName("Lilo");
+myName('Lilo');
 // return
 function myPet() {
     return `My pet is a cat. Her name is 'Mali'`;
 }
 console.log(myPet());
-// Parameter & Return 
+// Parameter & Return
 function evenOrOdd(n) {
     if (n % 2 === 0) {
         return 'Even number';
@@ -29,3 +29,31 @@ const sumNumber = (a, b) => {
     return a + b;
 };
 console.log(sumNumber(2, 2));
+// Default Parameter
+const familyMember = (firstName, lastName = 'Mamuangsuk') => {
+    console.log(`Name: ${firstName} Lastname: ${lastName}`);
+};
+familyMember('Whasoo');
+familyMember('Jisoo', 'Kim');
+// Rest Parameter
+function total1(a, b, c) {
+    return a + b + c;
+}
+console.log(total1(2, 3, 7));
+function total2(...numbers) {
+    return numbers.reduce((arr, curr) => {
+        return arr + curr;
+    }, 0);
+}
+console.log(total2(2, 5, 7, 10, 1));
+// Array Destructuring
+const colours = ['rojo', 'verde', 'azul'];
+const [red, green, blue] = colours;
+// Object Destructuring
+const avatarFriends = {
+    cat: 'John',
+    hamster: 'Kman',
+    dog: 'Ngaw'
+};
+const { cat, hamster, dog } = avatarFriends;
+console.log(cat, hamster, dog);

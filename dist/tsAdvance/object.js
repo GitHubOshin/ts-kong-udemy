@@ -4,7 +4,7 @@ const personObj1 = { name: 'Me', age: 10 };
 const personObj2 = {
     name: 'Justin',
     age: 2,
-    address: "Uk"
+    address: 'Uk'
 };
 // - Function that gets obj as a property -
 function showDetail1(data) {
@@ -15,7 +15,7 @@ showDetail1(personObj2); // OUTPUT -> Name: Juatin, Age: 2
 function showDetail2(data) {
     console.log(`Name: ${data.name}, Age: ${data.age}`);
 }
-showDetail2({ personObj2 }); // Put obj inside {}
+// showDetail2({personObj2}) // Put obj inside {}
 // - Func returns obj -
 function randomPosition() {
     return {
