@@ -57,3 +57,25 @@ const avatarFriends = {
 };
 const { cat, hamster, dog } = avatarFriends;
 console.log(cat, hamster, dog);
+function sayHiToFriend(name) {
+    if (!name) {
+        return 'Hello Friend!';
+    }
+    if (typeof name === 'string') {
+        return `Hello ${name}`;
+    }
+    throw new Error('TypeError');
+}
+console.log(sayHiToFriend());
+console.log(sayHiToFriend('Oshin'));
+function sumApple(newApple, oldApple) {
+    if (typeof newApple === 'number' && typeof oldApple === 'number') {
+        return newApple + oldApple;
+    }
+    if (typeof newApple === 'string' && typeof oldApple === 'string') {
+        return `New apple(s): ${newApple} + Old apple(s): ${oldApple} | All = ${parseInt(newApple) + parseInt(oldApple)}`;
+    }
+    throw new Error('TypeError');
+}
+console.log(sumApple(2, 2));
+console.log(sumApple('6', '1'));
