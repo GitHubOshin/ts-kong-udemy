@@ -12,6 +12,12 @@ const person1 = {
         console.log(`Last update: ${new Date().toLocaleTimeString()}`);
     }
 };
-// person1.name = 'Wendy'
-// console.log(person1.info())
-// console.log(person1)
+let account1 = {
+    name: 'Lala',
+    country: 'China',
+    petName: 'Leo',
+    petType: 'Cat',
+    petBirth: '12/12/2002',
+    cfName: 'Kim',
+    cfCountry: 'US'
+};
