@@ -31,3 +31,31 @@ const person1: Person = {
 // person1.name = 'Wendy'
 // console.log(person1.info())
 // console.log(person1)
+
+// -- Extended Interface --
+
+interface Pet {
+  petName: string
+  petType: string
+  petBirth: string
+}
+
+interface CloseFriend {
+  cfName: string
+  cfCountry: string
+}
+
+interface User extends Pet, CloseFriend {
+  name: string
+  country: string
+}
+
+let account1: User = {
+  name: 'Lala',
+  country: 'China',
+  petName: 'Leo',
+  petType: 'Cat',
+  petBirth: '12/12/2002',
+  cfName: 'Kim',
+  cfCountry: 'US'
+}
