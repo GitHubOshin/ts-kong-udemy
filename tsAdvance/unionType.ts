@@ -38,3 +38,16 @@ function helloFreind(personName: string | string[]): void {
 
 helloFreind('Oshin')
 helloFreind(['Kman', 'Ngaw', 'Icey']) // Hello, Kman! Hello, Ngaw! Hello, Icey!
+
+// -- Literals Type --
+
+function shutdown(answer: 'yes' | 'no') {
+  if (answer === 'yes' || answer === 'no') {
+    console.log(`result: ${answer}`)
+  } else {
+    console.error(`Error: The answer must be "yes" or "no" only!`)
+  }
+}
+
+shutdown('Hi')
+shutdown('yes')
