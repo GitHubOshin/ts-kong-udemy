@@ -1,0 +1,25 @@
+// -- Union Type --
+
+let age: number | string
+age = 10
+console.log(age)
+age = 'Ten'
+console.log(age)
+
+// -- Union Type & Type Aliases --
+
+type Point = {
+  x: number
+  y: number
+}
+
+type Position = {
+  lat: number
+  long: number
+}
+
+let coordinates:Point | Position
+coordinates = { x:5, y:2}
+console.log(coordinates);
+coordinates = {lat: 1, long: 8}
+console.log(coordinates);
