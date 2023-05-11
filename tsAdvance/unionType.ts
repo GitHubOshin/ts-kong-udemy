@@ -49,5 +49,12 @@ function shutdown(answer: 'yes' | 'no') {
   }
 }
 
-shutdown('Hi')
+// shutdown('Hi') // Error: The answer must be "yes" or "no" only!
 shutdown('yes')
+
+// --  Template Literals Type --
+
+type vertical = 'top' | 'middle' | 'bottom'
+type horizontal = 'left' | 'center' | 'right'
+
+type alignment = `${vertical} - ${horizontal}`
