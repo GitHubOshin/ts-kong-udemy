@@ -18,8 +18,23 @@ type Position = {
   long: number
 }
 
-let coordinates:Point | Position
-coordinates = { x:5, y:2}
-console.log(coordinates);
-coordinates = {lat: 1, long: 8}
-console.log(coordinates);
+let coordinates: Point | Position
+coordinates = { x: 5, y: 2 }
+console.log(coordinates)
+coordinates = { lat: 1, long: 8 }
+console.log(coordinates)
+
+// -- Union Type & Function --
+
+function helloFreind(personName: string | string[]): void {
+  if (typeof personName === 'string') {
+    console.log(`Hello, ${personName}!`)
+  } else {
+    personName.forEach((element) => {
+      console.log(`Hello, ${element}!`)
+    })
+  }
+}
+
+helloFreind('Oshin')
+helloFreind(['Kman', 'Ngaw', 'Icey']) // Hello, Kman! Hello, Ngaw! Hello, Icey!
