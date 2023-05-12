@@ -47,3 +47,24 @@ class Employee4 {
 const emp4 = new Employee4('Nung Jin', 'IT', 10)
 console.log(emp4)
 // emp4.salary = 20 // Property 'salary' is private and only accessible within class 'Employee4'.
+
+// --  Method --
+
+class Employee5 {
+  name: string
+  department: string
+  salary: number
+  constructor(name: string, department: string, salary: number) {
+    this.name = name
+    this.department = department
+    this.salary = salary
+  }
+  showDetail() {
+    console.log(
+      `Name: ${this.name} | Department: ${this.department} | Salary: ${this.salary} THB`
+    )
+  }
+}
+
+const emp5 = new Employee5('Meow', 'IT', 2)
+emp5.showDetail()
