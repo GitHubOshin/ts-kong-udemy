@@ -16,11 +16,12 @@ class Employee2 {
 
 const emp2 = new Employee2()
 
-// -- Property --
+// -- Property | Readonly Property --
 
 class Employee3 {
-  name: string
+  readonly name: string
   department: string
+  salary: number
   constructor(name: string, department: string, salary: number) {
     this.name = name
     this.department = department
