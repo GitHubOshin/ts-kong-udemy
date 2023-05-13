@@ -1,3 +1,4 @@
+'use strict'
 // -- Getter Method & Setter Method --
 
 class Employee6 {

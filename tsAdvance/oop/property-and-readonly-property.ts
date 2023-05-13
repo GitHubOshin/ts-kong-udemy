@@ -1,3 +1,4 @@
+'use strict'
 // -- Property | Readonly Property --
 
 class Employee3 {

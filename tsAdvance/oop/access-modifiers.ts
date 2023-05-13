@@ -1,3 +1,4 @@
+'use strict'
 // -- Access Modifiers --
 
 class Employee4 {
