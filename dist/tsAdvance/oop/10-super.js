@@ -1,4 +1,5 @@
 "use strict";
+// -- Super --
 class Employee9 {
     constructor(name, department, salary) {
         this.name = name;

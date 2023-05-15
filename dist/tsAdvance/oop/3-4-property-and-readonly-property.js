@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // -- Property | Readonly Property --
 class Employee3 {
     constructor(name, department, salary) {

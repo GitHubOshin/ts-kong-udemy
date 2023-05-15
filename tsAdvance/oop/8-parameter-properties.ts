@@ -1,4 +1,6 @@
-class Employee9 {
+// -- Parameter Properties --
+
+class Employee7 {
   constructor(
     private name: string,
     private department: string,
@@ -17,11 +19,8 @@ class Employee9 {
   }
 }
 
-class IT9 extends Employee9 {
-  constructor(name: string, salary: number) {
-    super(name, 'IT', salary)
-  }
-}
-
-const emp8 = new IT9('Lisa', 9)
-emp8.showDetail()
+const emp7 = new Employee7('Cat Tung', 'Eng Teacher', 20)
+console.log(emp7.Salary)
+emp7.Salary = 100
+emp7.showDetail()
+console.log(emp7.Salary)

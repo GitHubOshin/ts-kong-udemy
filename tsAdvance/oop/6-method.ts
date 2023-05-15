@@ -1,4 +1,3 @@
-'use strict'
 // --  Method --
 
 class Employee5 {

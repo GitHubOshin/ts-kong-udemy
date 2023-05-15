@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // --  Method --
 class Employee5 {
     constructor(name, department, salary) {

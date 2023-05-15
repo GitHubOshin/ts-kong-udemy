@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // -- Parameter Properties --
 class Employee7 {
     constructor(name, department, salary) {

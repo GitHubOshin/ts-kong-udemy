@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // -- Getter Method & Setter Method --
 class Employee6 {
     constructor(name, department, salary) {
